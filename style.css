@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Grand Hotel", cursive;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    background-repeat: no-repeat;
+    color: #2c2c2c;
+    height: 130vh;
+    position: relative;
+}
+
+#name {
+    font-family: "Outfit", sans-serif;
+}
+
+.container {
+    margin-top: 4rem;
+    z-index: 100;
+}
+
+.container h1 {
+    font-size: 4rem;
+    color: #2c2c2c;
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 2.2rem;
+    color: #ffadbf;
+    text-shadow:
+        0 0 5px #f85082,
+        0 0 8px #e93890;
+}
+
+p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    color: #2c2c2c;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    font-family: "Outfit", sans-serif;
+    margin-top: 1rem;
+    padding: 10px 30px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #f85082, #ff9a9e);
+    border: none;
+    border-radius: 25px;
+    color: #2c2c2c;
+    cursor: pointer;
+    box-shadow: 0 3px 10px #a18cd1;
+    transition:
+        transform 0.3s,
+        background-color 0.3s,
+        box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff9a9e, #f85082);
+    box-shadow: 0 8px 20px #a18cd1;
+}
+
+#surprise {
+    margin-top: 2rem;
+    display: none;
+}
+
+#surprise h2 {
+    font-size: 3rem;
+    word-spacing: 15px;
+}
+
+#surprise p {
+    font-size: 2rem;
+}
+
+.emoji-cake {
+    font-size: 4em;
+    margin: 20px 0;
+    animation: bounce 1.5s infinite alternate;
+}
+
+#quote-box {
+    font-family: "Outfit", sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    width: 50%;
+    border-radius: 20px;
+    font-size: 1.2em;
+    color: black;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    display: none;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        height: 170vh;
+        padding: 0 5px;
+        width: 100%;
+    }
+
+    #quote-box {
+        width: 350px;
+    }
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Only For You</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="flow.css" />
+        <link rel="icon" href="favicon.png" />
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Background Music -->
+        <audio id="bgMusic" loop preload="auto">
+            <source src="for-you.mp3" type="audio/mpeg" />
+        </audio>
+
+        <div class="rain-container">
+            <!-- raindrops -->
+        </div>
+
+        <div class="container">
+            <h1>Hey <span id="name"></span>!</h1>
+            <h2>Only for you Dear..</h2>
+            <p>A little magic awaits...</p>
+
+            <button id="reveal" onclick="showSurprise()">Let's Reveal!</button>
+
+            <div id="surprise">
+                <h2>HAPPIEST BIRTHDAY to YOU</h2>
+                <div class="emoji-cake">🎉🎂🎉</div>
+                <p>Wishing you endless happiness 🌟</p>
+
+                <button onclick="showQuote()">Unwrap a Sweet Thought!</button>
+
+                <div id="quote-box"></div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
