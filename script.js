@@ -1,4 +1,4 @@
-const name = "Ariana";
+const name = "Samiya";
 const bgMusic = document.getElementById("bgMusic");
 const revealBtn = document.getElementById("reveal");
 
